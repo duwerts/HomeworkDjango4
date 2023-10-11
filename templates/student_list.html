@@ -1,0 +1,6 @@
+<!{% for subject in subjects %}
+    <a href="{% url 'students_edit' students.id %}">ID {{ students.id }}</a>
+    Імʼя {{ students.first_name }} Email {{ students.email }}   {{ students.last_name }}
+
+    <br>
+{% endfor %}

@@ -1,0 +1,6 @@
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="OK">
+    <a href="{% url 'add_student_to_group' student.group.id %}">Add to Group</a>
+</form>

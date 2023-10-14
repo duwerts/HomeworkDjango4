@@ -1,9 +1,8 @@
+
 from django.db import models
-from pythonпDjangoProject4.students.models import Students
-from pythonпDjangoProject4.group.models import Teacher
 
-
-
+from students.models import Students
+from group.models import Teacher
 
 class Group(models.Model):
     name = models.CharField(max_length=100)
